@@ -1,12 +1,18 @@
 import React from 'react';
-import Navigation from './components/Navigation'
-import './App.css'
+import Navigation from './components/Navigation';
+import './App.css';
+import { BrowserRouter } from 'react-router-dom';
+import Router from './Router.js';
+
 // Write imports for Router & BrowserRouter here //
 
 function App() {
-  return (
-    <Navigation />
-  );
+	return (
+		<BrowserRouter>
+			<Navigation />
+			<Router />
+		</BrowserRouter>
+	);
 }
 
 export default App;
